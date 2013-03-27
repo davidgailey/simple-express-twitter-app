@@ -1,0 +1,44 @@
+{
+  "name": "simple-express-twitter-app",
+  "version": "0.0.1",
+  "author": "David Gailey",
+  "description": "Chapter 9 - Smashing Node.js",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "",
+    ""
+  ],
+  "homepage": "",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "dependencies": {
+    "express" : "2.5.9",
+    "ejs" : "0.4.2",
+    "superagent" : "0.3.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.4"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nodeapps/helloworld/raw/master/LICENSE"
+    }
+  ],
+  "analyze": false
+}
