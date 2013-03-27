@@ -3,7 +3,7 @@ var express = require('express'),
     port 	= 3000,
     url 	= 'http://localhost:' + port + '/',
     search 	= require('./search'),
-    app		= express.createServer();
+    app		= express();
 
 // express config
 
@@ -18,7 +18,13 @@ console.log(app.set('views'));
 
 app.get('/', function(req,res){
 	res.render('index');
+});
 
+app.get('/search', function(req,res,next){
+	search(req.query.q, function(err,tweets){
+		if(err) return next(err);
+		res.render('search', {results:tweets, search:req.query.q})
+	});
 });
 
 
